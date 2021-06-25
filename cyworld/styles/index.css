@@ -1,0 +1,194 @@
+* {
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.background {
+	background-image: url('../images/background.png');
+	width: 1024px;
+	height: 600px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.outerbox {
+	background-image: url('../images/outerbox.png');
+	width: 808px;
+	height: 544px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	padding-left: 32px;
+	padding-top: 32px;
+}
+
+.wrapper__left {
+	width: 208px;
+	height: 472px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.wrapper__left__header {
+}
+
+.today {
+	font-size: 9px;
+	padding-bottom: 8px;
+}
+
+.zero {
+	color: red;
+	font-size: 11px;
+}
+
+.count {
+	font-size: 11px;
+}
+
+.wrapper__left__body {
+	width: 208px;
+	height: 440px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 1px solid gray;
+	border-radius: 15px;
+	padding-top: 20px;
+	padding-bottom: 31px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: white;
+}
+
+.left__body__header {
+	width: 100%;
+	height: 70%;
+}
+
+.left__body__header__Grey {
+	width: 148px;
+	height: 133px;
+	background-color: #c4c4c4;
+}
+
+.line {
+	border-top: 1px dotted black;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.wrapper__profle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 72px;
+}
+
+.profile {
+	color: #999999;
+	font-size: 9px;
+}
+.wrapper__left__body .footer {
+	width: 100%;
+	height: 30%;
+	display: flex;
+	align-items: flex-end;
+}
+
+.wrapper__right {
+	width: 524px;
+	height: 472px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-left: 10px;
+	z-index: 1;
+}
+
+.wrapper__right__header {
+	padding-top: 10px;
+	width: 510px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wrapper__right__title {
+	padding-left: 40px;
+	color: #55b2d4;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.wrapper__right__setting {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.wrapper__right__body {
+	width: 524px;
+	height: 430px;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 15px;
+}
+
+.wrapper__feel {
+	width: 141px;
+	height: 41px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.feel__text {
+	font-size: 11px;
+}
+
+.feel__select {
+	width: 141px;
+}
+
+.arrow {
+	color: red;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.navigation{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* position: absolute : 좌표를 통해 위치를 지정하겠다! */
+	position: absolute;
+	left: 790px;
+	top: 105px;
+}
+
+.navigation__item{
+	width: 60px;
+	height: 30px;
+	color: white;
+	font-size: 12px;
+	/* text-align : 글자 하나 정렬할 때는 flex로 하지 않고 간단한 방법 */
+	text-align: center;
+	/* line-height: 박스 안의 글씨를 세로축 기준 가운데로 정렬, 크기는 박스크기로 정렬 */
+	line-height: 30px;
+	background-color: #298EB5;
+	border: 1px solid #0F465E;
+	border-radius: 5px;
+	/* cursor: pointer; : 박스 위에 마우스를 올렸을 때 커서가 손가락으로 바뀜. */
+	cursor: pointer;
+}

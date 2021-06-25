@@ -1,0 +1,11 @@
+input{
+    background-color:yellow;
+}
+/* qqq라는 class를 가진 항목들을 style을 바꿔줌 */
+.qqq{
+    background-color: skyblue;
+}
+/* id는 class와 달리 고유한 하나만 가능 */
+#www{
+    background-color: green;
+}

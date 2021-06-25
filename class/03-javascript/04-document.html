@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>돔연습</title>
+    <!-- html에 JS를 연결할 때 head 부분에 <script>를 넣어줌 -->
+    <script>
+        function aaa(){
+            // html에 있는 qqq라는 id의 문서를 JS로 가져와라  / .innerText 는 그 문서 안에 있는 Text를 뽑아냄.
+                                                    //      / .innerhtml은 태그를 뽑아냄
+                                                    //      /
+            document.getElementById("qqq").innerText ="반갑습니다"
+        }
+
+        function counter(){
+            //
+            const count = Number(document.getElementById("www").innerText) + 1
+            
+            // 이렇게 만든 값을 html의 innertext에 넣어줌.
+            document.getElementById("www").innerText = count
+        }
+
+        function bbb(){
+            document.getElementById("finish").setAttribute("disabled","true")
+        }
+    </script>
+</head>
+<body>
+    <div id="qqq">안녕하세요</div>
+    <button onclick="aaa()">클릭</button>
+
+    <div id="www">0</div>
+    <button onclick="counter()">더하기1</button>
+    <br /><br />
+    <button onclick="bbb()">인증번호 전송</button>
+    <button id="finish">인증완료</button>
+</body>
+</html>
